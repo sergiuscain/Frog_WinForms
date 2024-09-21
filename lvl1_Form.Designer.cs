@@ -28,80 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            right_pictureBox1 = new PictureBox();
+            right_pictureBox2 = new PictureBox();
+            right_pictureBox3 = new PictureBox();
+            left_pictureBox2 = new PictureBox();
+            left_pictureBox1 = new PictureBox();
+            empty_pictureBox = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)right_pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)right_pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)right_pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)left_pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)left_pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)empty_pictureBox).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // right_pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.frogRight;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(110, 110);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            right_pictureBox1.Image = Properties.Resources.frogRight;
+            right_pictureBox1.Location = new Point(0, 0);
+            right_pictureBox1.Name = "right_pictureBox1";
+            right_pictureBox1.Size = new Size(110, 110);
+            right_pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            right_pictureBox1.TabIndex = 0;
+            right_pictureBox1.TabStop = false;
+            right_pictureBox1.Click += frog_Click;
             // 
-            // pictureBox2
+            // right_pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.frogRight;
-            pictureBox2.Location = new Point(110, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(110, 110);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            right_pictureBox2.Image = Properties.Resources.frogRight;
+            right_pictureBox2.Location = new Point(110, 0);
+            right_pictureBox2.Name = "right_pictureBox2";
+            right_pictureBox2.Size = new Size(110, 110);
+            right_pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            right_pictureBox2.TabIndex = 1;
+            right_pictureBox2.TabStop = false;
+            right_pictureBox2.Click += frog_Click;
             // 
-            // pictureBox3
+            // right_pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.frogRight;
-            pictureBox3.Location = new Point(220, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(110, 110);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            right_pictureBox3.Image = Properties.Resources.frogRight;
+            right_pictureBox3.Location = new Point(220, 0);
+            right_pictureBox3.Name = "right_pictureBox3";
+            right_pictureBox3.Size = new Size(110, 110);
+            right_pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            right_pictureBox3.TabIndex = 2;
+            right_pictureBox3.TabStop = false;
+            right_pictureBox3.Click += frog_Click;
             // 
-            // pictureBox4
+            // left_pictureBox2
             // 
-            pictureBox4.Image = Properties.Resources.frogRight;
-            pictureBox4.Location = new Point(547, 0);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(110, 110);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 5;
-            pictureBox4.TabStop = false;
+            left_pictureBox2.Image = Properties.Resources.frogLeft;
+            left_pictureBox2.Location = new Point(547, 0);
+            left_pictureBox2.Name = "left_pictureBox2";
+            left_pictureBox2.Size = new Size(110, 110);
+            left_pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            left_pictureBox2.TabIndex = 5;
+            left_pictureBox2.TabStop = false;
+            left_pictureBox2.Click += frog_Click;
             // 
-            // pictureBox5
+            // left_pictureBox1
             // 
-            pictureBox5.Image = Properties.Resources.frogRight;
-            pictureBox5.Location = new Point(437, 0);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(110, 110);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 4;
-            pictureBox5.TabStop = false;
+            left_pictureBox1.Image = Properties.Resources.frogLeft;
+            left_pictureBox1.Location = new Point(437, 0);
+            left_pictureBox1.Name = "left_pictureBox1";
+            left_pictureBox1.Size = new Size(110, 110);
+            left_pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            left_pictureBox1.TabIndex = 4;
+            left_pictureBox1.TabStop = false;
+            left_pictureBox1.Click += frog_Click;
             // 
-            // pictureBox6
+            // empty_pictureBox
             // 
-            pictureBox6.Image = Properties.Resources.frogRight;
-            pictureBox6.Location = new Point(327, 0);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(110, 110);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 3;
-            pictureBox6.TabStop = false;
+            empty_pictureBox.Image = Properties.Resources.empty;
+            empty_pictureBox.Location = new Point(327, 0);
+            empty_pictureBox.Name = "empty_pictureBox";
+            empty_pictureBox.Size = new Size(110, 110);
+            empty_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            empty_pictureBox.TabIndex = 3;
+            empty_pictureBox.TabStop = false;
             // 
             // lvl1_Form
             // 
@@ -109,30 +113,30 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.OliveDrab;
             ClientSize = new Size(656, 107);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(left_pictureBox2);
+            Controls.Add(left_pictureBox1);
+            Controls.Add(empty_pictureBox);
+            Controls.Add(right_pictureBox3);
+            Controls.Add(right_pictureBox2);
+            Controls.Add(right_pictureBox1);
             Name = "lvl1_Form";
             Text = "lvl1_Form";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)right_pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)right_pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)right_pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)left_pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)left_pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)empty_pictureBox).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private PictureBox right_pictureBox1;
+        private PictureBox right_pictureBox2;
+        private PictureBox right_pictureBox3;
+        private PictureBox left_pictureBox2;
+        private PictureBox left_pictureBox1;
+        private PictureBox empty_pictureBox;
     }
 }

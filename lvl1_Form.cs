@@ -17,9 +17,14 @@ namespace Frog_WinForms
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void frog_Click(object sender, EventArgs e)
         {
+            SwapFrog((PictureBox)sender);
+        }
 
+        private void SwapFrog(PictureBox frog)
+        {
+            frog.Dispose();
         }
     }
 }
