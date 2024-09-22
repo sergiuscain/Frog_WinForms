@@ -14,7 +14,7 @@ namespace Frog_WinForms
     {
         private HashSet<PictureBox> left = new HashSet<PictureBox>();
         private HashSet<PictureBox> right = new HashSet<PictureBox>();
-        public int stepCount { get; private set; }
+        public int stepCount;
         public lvl1_Form()
         {
             InitializeComponent();
@@ -26,7 +26,6 @@ namespace Frog_WinForms
             right.Add(right_pictureBox1);
             right.Add(right_pictureBox2);
             right.Add(right_pictureBox3);
-            stepCount = 16;
             stepCountLabel.Text = $"Осталось ходов: {stepCount.ToString()}";
         }
 
@@ -39,7 +38,7 @@ namespace Frog_WinForms
                 MessageBox.Show("Ты победил!!");
                 this.Close();
             }
-            if (isGameOver())
+            else if (isGameOver())
             {
                 MessageBox.Show("Закончились ходы. Это провал!");
                 this.Close();

@@ -31,6 +31,11 @@
             lvl1_Button = new Button();
             lvl2_Button = new Button();
             lvl3_Button = new Button();
+            menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            правилаИгрыМеню = new ToolStripMenuItem();
+            ВыходМеню = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // lvl1_Button
@@ -41,7 +46,7 @@
             lvl1_Button.FlatStyle = FlatStyle.Flat;
             lvl1_Button.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             lvl1_Button.Image = Properties.Resources.empty;
-            lvl1_Button.Location = new Point(12, 12);
+            lvl1_Button.Location = new Point(0, 27);
             lvl1_Button.Name = "lvl1_Button";
             lvl1_Button.Size = new Size(120, 120);
             lvl1_Button.TabIndex = 1;
@@ -57,7 +62,7 @@
             lvl2_Button.FlatStyle = FlatStyle.Flat;
             lvl2_Button.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             lvl2_Button.Image = Properties.Resources.empty;
-            lvl2_Button.Location = new Point(138, 12);
+            lvl2_Button.Location = new Point(126, 27);
             lvl2_Button.Name = "lvl2_Button";
             lvl2_Button.Size = new Size(120, 120);
             lvl2_Button.TabIndex = 2;
@@ -73,13 +78,45 @@
             lvl3_Button.FlatStyle = FlatStyle.Flat;
             lvl3_Button.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             lvl3_Button.Image = Properties.Resources.empty;
-            lvl3_Button.Location = new Point(264, 12);
+            lvl3_Button.Location = new Point(252, 27);
             lvl3_Button.Name = "lvl3_Button";
             lvl3_Button.Size = new Size(120, 120);
             lvl3_Button.TabIndex = 3;
             lvl3_Button.Text = "3";
             lvl3_Button.UseVisualStyleBackColor = false;
             lvl3_Button.Click += lvl3_Button_Click;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(406, 24);
+            menuStrip1.TabIndex = 4;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { правилаИгрыМеню, ВыходМеню });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(53, 20);
+            toolStripMenuItem1.Text = "Меню";
+            // 
+            // правилаИгрыМеню
+            // 
+            правилаИгрыМеню.BackColor = Color.SeaGreen;
+            правилаИгрыМеню.Name = "правилаИгрыМеню";
+            правилаИгрыМеню.Size = new Size(180, 22);
+            правилаИгрыМеню.Text = "Правила игры";
+            правилаИгрыМеню.Click += правилаИгрыМеню_Click;
+            // 
+            // ВыходМеню
+            // 
+            ВыходМеню.BackColor = Color.Crimson;
+            ВыходМеню.Name = "ВыходМеню";
+            ВыходМеню.Size = new Size(180, 22);
+            ВыходМеню.Text = "Выход";
+            ВыходМеню.Click += ВыходМеню_Click;
             // 
             // MainForm
             // 
@@ -90,8 +127,12 @@
             Controls.Add(lvl3_Button);
             Controls.Add(lvl2_Button);
             Controls.Add(lvl1_Button);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.None;
+            MainMenuStrip = menuStrip1;
             Name = "MainForm";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -101,5 +142,9 @@
         private Button lvl1_Button;
         private Button lvl2_Button;
         private Button lvl3_Button;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem правилаИгрыМеню;
+        private ToolStripMenuItem ВыходМеню;
     }
 }
