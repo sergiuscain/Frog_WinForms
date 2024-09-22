@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lvl1_Form));
             right_pictureBox1 = new PictureBox();
             right_pictureBox2 = new PictureBox();
             right_pictureBox3 = new PictureBox();
@@ -130,6 +131,7 @@
             Controls.Add(right_pictureBox3);
             Controls.Add(right_pictureBox2);
             Controls.Add(right_pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "lvl1_Form";
             Text = "lvl1_Form";
             Load += lvl1_Form_Load;
