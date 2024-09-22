@@ -34,6 +34,7 @@
             left_pictureBox2 = new PictureBox();
             left_pictureBox1 = new PictureBox();
             empty_pictureBox = new PictureBox();
+            stepCountLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)right_pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)right_pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)right_pictureBox3).BeginInit();
@@ -107,12 +108,22 @@
             empty_pictureBox.TabIndex = 3;
             empty_pictureBox.TabStop = false;
             // 
+            // stepCountLabel
+            // 
+            stepCountLabel.AutoSize = true;
+            stepCountLabel.Location = new Point(0, 113);
+            stepCountLabel.Name = "stepCountLabel";
+            stepCountLabel.Size = new Size(13, 15);
+            stepCountLabel.TabIndex = 6;
+            stepCountLabel.Text = "0";
+            // 
             // lvl1_Form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.OliveDrab;
-            ClientSize = new Size(656, 107);
+            BackColor = Color.MediumTurquoise;
+            ClientSize = new Size(656, 133);
+            Controls.Add(stepCountLabel);
             Controls.Add(left_pictureBox2);
             Controls.Add(left_pictureBox1);
             Controls.Add(empty_pictureBox);
@@ -121,6 +132,7 @@
             Controls.Add(right_pictureBox1);
             Name = "lvl1_Form";
             Text = "lvl1_Form";
+            Load += lvl1_Form_Load;
             ((System.ComponentModel.ISupportInitialize)right_pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)right_pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)right_pictureBox3).EndInit();
@@ -128,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)left_pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)empty_pictureBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -138,5 +151,6 @@
         private PictureBox left_pictureBox2;
         private PictureBox left_pictureBox1;
         private PictureBox empty_pictureBox;
+        private Label stepCountLabel;
     }
 }
